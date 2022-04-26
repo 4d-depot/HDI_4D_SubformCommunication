@@ -1,0 +1,6 @@
+EXECUTE METHOD IN SUBFORM:C1085("Subform1"; "setTrace"; *; Form:C1466.trace)
+EXECUTE METHOD IN SUBFORM:C1085("Subform2"; "setTrace"; *; Form:C1466.trace)
+EXECUTE METHOD IN SUBFORM:C1085("Subform3"; "setTrace"; *; Form:C1466.trace)
+EXECUTE METHOD IN SUBFORM:C1085("Subform4"; "setTrace"; *; Form:C1466.trace)
+EXECUTE METHOD IN SUBFORM:C1085("Subform5"; "setTrace"; *; Form:C1466.trace)
+EXECUTE METHOD IN SUBFORM:C1085("Subform6"; "setTrace"; *; Form:C1466.trace)

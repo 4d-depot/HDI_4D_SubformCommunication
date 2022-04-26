@@ -1,0 +1,527 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 1200,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 620,
+	"windowMaxHeight": 32000,
+	"width": 1200,
+	"height": 860,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDataChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tabs": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1150,
+					"height": 820,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.tabControl",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Tabs.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"description": {
+					"type": "input",
+					"left": 80,
+					"top": 100,
+					"width": 1040,
+					"height": 680,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.description",
+					"styledText": true,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "center"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 60,
+					"width": 700,
+					"height": 670,
+					"fill": "#E6F7FF",
+					"strokeDashArray": [
+						6,
+						2
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 440,
+					"width": 290,
+					"height": 590,
+					"fill": "#DAEAF2",
+					"strokeDashArray": [
+						6,
+						2
+					]
+				},
+				"Static Picture1": {
+					"type": "picture",
+					"top": 267,
+					"left": 1388,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/new.png",
+					"pictureFormat": "scaled",
+					"sizingX": "move"
+				},
+				"Subform1": {
+					"type": "subform",
+					"left": 500,
+					"top": 170,
+					"width": 180,
+					"height": 40,
+					"detailForm": "S_Date",
+					"borderStyle": "sunken",
+					"dataSourceTypeHint": "date",
+					"dataSource": "Form:C1466.date"
+				},
+				"Button": {
+					"type": "button",
+					"text": "RND Fill",
+					"top": 790,
+					"left": 60,
+					"width": 159,
+					"height": 22,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"focusable": false
+				},
+				"Input": {
+					"type": "input",
+					"left": 180,
+					"top": 180,
+					"width": 160,
+					"height": 17,
+					"dataSourceTypeHint": "date",
+					"dataSource": "Form:C1466.date",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input1": {
+					"type": "input",
+					"left": 180,
+					"top": 250,
+					"width": 160,
+					"height": 17,
+					"dataSourceTypeHint": "time",
+					"dataSource": "Form:C1466.time",
+					"timeFormat": "hh_mm_ss",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform2": {
+					"type": "subform",
+					"left": 500,
+					"top": 240,
+					"width": 180,
+					"height": 40,
+					"detailForm": "S_Time",
+					"borderStyle": "sunken",
+					"dataSourceTypeHint": "date",
+					"dataSource": "Form:C1466.time"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 180,
+					"top": 320,
+					"width": 160,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"dataSource": "Form:C1466.numeric",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform3": {
+					"type": "subform",
+					"left": 500,
+					"top": 310,
+					"width": 180,
+					"height": 40,
+					"detailForm": "S_Real",
+					"borderStyle": "sunken",
+					"dataSourceTypeHint": "date",
+					"dataSource": "Form:C1466.numeric"
+				},
+				"Input3": {
+					"type": "input",
+					"left": 180,
+					"top": 390,
+					"width": 160,
+					"height": 17,
+					"dataSourceTypeHint": "text",
+					"dataSource": "Form:C1466.text",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Subform4": {
+					"type": "subform",
+					"left": 500,
+					"top": 380,
+					"width": 180,
+					"height": 40,
+					"detailForm": "S_Text",
+					"borderStyle": "sunken",
+					"dataSourceTypeHint": "text",
+					"dataSource": "Form:C1466.text"
+				},
+				"Input4": {
+					"type": "input",
+					"left": 180,
+					"top": 520,
+					"width": 160,
+					"height": 160,
+					"dataSourceTypeHint": "picture",
+					"dataSource": "Form:C1466.picture",
+					"events": [
+						"onDataChange"
+					],
+					"pictureFormat": "proportionalCenter"
+				},
+				"Subform6": {
+					"type": "subform",
+					"left": 500,
+					"top": 520,
+					"width": 180,
+					"height": 180,
+					"detailForm": "S_Picture",
+					"borderStyle": "sunken",
+					"dataSourceTypeHint": "text",
+					"dataSource": "Form:C1466.picture"
+				},
+				"Subform5": {
+					"type": "subform",
+					"left": 500,
+					"top": 450,
+					"width": 180,
+					"height": 40,
+					"detailForm": "S_Boolean",
+					"borderStyle": "sunken",
+					"dataSourceTypeHint": "text",
+					"dataSource": "Form:C1466.boolean"
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Value",
+					"top": 450,
+					"left": 180,
+					"width": 141,
+					"height": 20,
+					"events": [],
+					"dataSource": "Form:C1466.boolean",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Form.date:",
+					"top": 180,
+					"left": 70,
+					"width": 100,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Form.time",
+					"top": 250,
+					"left": 70,
+					"width": 100,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Form.numeric",
+					"top": 320,
+					"left": 70,
+					"width": 100,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Form.text:",
+					"top": 390,
+					"left": 70,
+					"width": 100,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Form.boolean:",
+					"top": 452,
+					"left": 70,
+					"width": 100,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "Form.picture:",
+					"top": 592,
+					"left": 70,
+					"width": 100,
+					"height": 16,
+					"textAlign": "right"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "Form.date:",
+					"top": 152,
+					"left": 500,
+					"width": 100,
+					"height": 16,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#1e90ff"
+				},
+				"Text7": {
+					"type": "text",
+					"text": "Form.time",
+					"top": 222,
+					"left": 500,
+					"width": 100,
+					"height": 16,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#1e90ff"
+				},
+				"Text8": {
+					"type": "text",
+					"text": "Form.numeric",
+					"top": 292,
+					"left": 500,
+					"width": 100,
+					"height": 16,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#1e90ff"
+				},
+				"Text9": {
+					"type": "text",
+					"text": "Form.text:",
+					"top": 362,
+					"left": 500,
+					"width": 100,
+					"height": 16,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#1e90ff"
+				},
+				"Text10": {
+					"type": "text",
+					"text": "Form.boolean:",
+					"top": 432,
+					"left": 500,
+					"width": 100,
+					"height": 16,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#1e90ff"
+				},
+				"Text11": {
+					"type": "text",
+					"text": "Form.picture:",
+					"top": 502,
+					"left": 500,
+					"width": 100,
+					"height": 16,
+					"textAlign": "left",
+					"fontStyle": "italic",
+					"stroke": "#1e90ff"
+				},
+				"Text12": {
+					"type": "text",
+					"text": "Main form",
+					"top": 118,
+					"left": 80,
+					"width": 180,
+					"height": 16,
+					"fontTheme": "main",
+					"textAlign": "center"
+				},
+				"Text13": {
+					"type": "text",
+					"text": "Six distinct subforms",
+					"top": 113,
+					"left": 460,
+					"width": 180,
+					"height": 16,
+					"fontTheme": "main",
+					"textAlign": "center"
+				},
+				"Static Picture8": {
+					"type": "picture",
+					"top": 161,
+					"left": 575,
+					"width": 18,
+					"height": 18,
+					"picture": "/RESOURCES/Images/Arrows_V.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture9": {
+					"type": "picture",
+					"top": 231,
+					"left": 575,
+					"width": 18,
+					"height": 18,
+					"picture": "/RESOURCES/Images/Arrows_V.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture10": {
+					"type": "picture",
+					"top": 301,
+					"left": 575,
+					"width": 18,
+					"height": 18,
+					"picture": "/RESOURCES/Images/Arrows_V.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture11": {
+					"type": "picture",
+					"top": 371,
+					"left": 575,
+					"width": 18,
+					"height": 18,
+					"picture": "/RESOURCES/Images/Arrows_V.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture12": {
+					"type": "picture",
+					"top": 441,
+					"left": 575,
+					"width": 18,
+					"height": 18,
+					"picture": "/RESOURCES/Images/Arrows_V.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture13": {
+					"type": "picture",
+					"top": 511,
+					"left": 575,
+					"width": 18,
+					"height": 18,
+					"picture": "/RESOURCES/Images/Arrows_V.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture5": {
+					"type": "picture",
+					"top": 159,
+					"left": 345,
+					"width": 149,
+					"height": 20,
+					"picture": "/RESOURCES/Images/CurvedArrow.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture6": {
+					"type": "picture",
+					"top": 177,
+					"left": 345,
+					"width": 149,
+					"height": 20,
+					"picture": "/RESOURCES/Images/CurvedArrowBack.png",
+					"pictureFormat": "scaled"
+				},
+				"description1": {
+					"type": "input",
+					"left": 780,
+					"top": 95,
+					"width": 370,
+					"height": 710,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.description",
+					"styledText": true,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"textAlign": "center",
+					"method": "ObjectMethods/description1.4dm"
+				},
+				"Check Box1": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 790,
+					"left": 665,
+					"width": 95,
+					"height": 23,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingX": "move",
+					"sizingY": "move",
+					"method": "ObjectMethods/Check Box1.4dm"
+				}
+			},
+			"entryOrder": [
+				"Subform1",
+				"Subform2",
+				"Subform3",
+				"Subform4",
+				"Subform5",
+				"Subform6",
+				"Button",
+				"Input",
+				"Input1",
+				"Input2",
+				"Input3",
+				"Check Box",
+				"Input4",
+				"description1",
+				"Check Box1"
+			]
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 4507,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Menu Bar #1"
+}
